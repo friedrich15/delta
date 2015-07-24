@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font: 14px Verdana, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #bbb;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+
+#menu-container {
+  float: left;
+  width: 15%;
+  height: 40em;
+  border-right: 1px solid #eee;
+  text-align: center;
+  padding: 1em;
+}
+
+#head-container {
+  clear: both;
+}
+
+#content-container {
+  float: left;
+  padding: 2em;
+  width: 80%;
+}
+.info-container {
+  padding: 0 2em;
+  float: left;
+  margin-top: 2em;
+  width: 50%;
+}
+
+.save-button {
+  margin: 1em;
+}

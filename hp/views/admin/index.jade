@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  #main-container
+    #menu-container
+      #add-item  
+        input(type="text")#new-item-name.form-control
+        a(onclick="addItem()") add Item
+      label menu items
+      ul#item-list.list-unstyled
+        each item in items
+          li
+            a(onclick="getItem(this.id)", id= item._id)= item.name
+    #content-container
+      #head-container
+        p name
+        input(type="text")#item-name.form-control
+      
+      #info-container-en.info-container
+        h3 english
+        p title
+        input(type="text")#item-title-en.form-control
+        p description
+        textarea(rows="5")#item-text-en.form-control
+      #info-container-de.info-container
+        h3 deutsch
+        p title
+        input(type="text")#item-title-de.form-control
+        p description
+        textarea(rows="5")#item-text-de.form-control
+      input(type="checkbox")#check-visible 
+      | visible
+      br
+      button(onclick="saveItem()").btn.btn-default.save-button save
