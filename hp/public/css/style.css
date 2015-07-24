@@ -10,6 +10,11 @@ body {
 
 a {
   color: #bbb;
+  cursor: pointer;
+}
+
+.active {
+  color: #444;
 }
 
 #logo {
@@ -123,7 +128,7 @@ a {
   /*border: 1px solid #ddd;*/
 }
 .info-text {
-  font: 1em "BLOKKNeue-Regular";
+  font: 1em Verdana;
   -webkit-transition: 200ms font-size;
   -moz-transition: 200ms font-size;
   transition: 200ms font-size;
